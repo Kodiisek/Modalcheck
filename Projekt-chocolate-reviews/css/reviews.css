@@ -47,6 +47,8 @@
         }
     
         .modal-label {
+            position: fixed;
+            padding-left: 24px;
             display: block;
             font-family: Montserrat;
             font-size: 18px;
@@ -56,21 +58,107 @@
             margin-bottom: 4px;
             line-height: 1.17;
             letter-spacing: 0.04em;
-            color: #8E8F99;
+            color: #4040404D;
         }
 
+        .modal-label-phone{
+            position: fixed;
+            
+            padding-left: 74px;
+            display: block;
+            color: #000;           
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;           
+            margin-bottom: 4px;
+            line-height: 1.17;
+            letter-spacing: 0.04em;
+        }
+        
+        
         .modal-input {
             width: 100%;
             height: 55px;
-            color: var(--DARK);
+            resize: none;
+            padding: 24px 22px;
+            font-family: Montserrat;
+            font-size: 18px;
+            line-height: normal;
+            letter-spacing: -0.36px;
+            color: #4040404D;
             background-color: transparent;
-            border: 1px solid #4040404D;
+            border: 1.5px solid #4040404D;
             border-radius: 13px;
             outline: transparent;
             transition-property: border-color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
+        
+        .modal-input::placeholder{
+            color: rgba(64, 64, 64, 0.30);
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.36px;
+        }
+
+        .modal-input-phone{
+            width: 100%;
+            height: 55px;
+            resize: none;
+            padding-left: 177px;
+            padding-top: 17px;
+            padding-bottom: 17px;
+            font-family: Montserrat;
+            font-size: 18px;
+            line-height: normal;
+            letter-spacing: -0.36px;
+            color: #4040404D;
+            background-color: transparent;
+            border: 1.5px solid #4040404D;
+            border-radius: 13px;
+            outline: transparent;
+            transition-property: border-color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .modal-input-phone::placeholder{
+            color: rgba(64, 64, 64, 0.30);
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.36px;
+        }
+        
+
+        .textarea::placeholder{
+            color: rgba(64, 64, 64, 0.30);
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.36px;
+        }
+
+        .modal-svg {
+            position: absolute;
+            left: 24px;
+            top: 50%;
+            width: 32px;
+            height: 24px;
+            transform: translateY(-50%);
+            transition-property: fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
         .textarea {
             height: 137px;
